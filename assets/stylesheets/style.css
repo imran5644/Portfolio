@@ -1,5 +1,8 @@
 body {
     background: #1B1B1E;
+  }
+
+  main {
     overflow-x: hidden;
 }
 
@@ -132,8 +135,6 @@ font-size: 30px;
 width: 430px;
 height: 110px;
 top: 984px;
-font-style: normal;
-font-weight: normal;
 line-height: 100%;
 }
 
@@ -218,25 +219,40 @@ transform: rotate(90deg);
   margin: 50px;
 }
 
-.main-project div.languages {
+div.languages {
   width: 132px;
   height: 40px;
   background: rgba(0, 0, 0, 0.5);
 }
 
-.projects form {
+.projects .live,
+.projects .github {
   bottom: 20px;
+}
+
+.projects .live {
   left: 40px;
 }
 
-.projects button {
-    width: 212px;
+.projects .github {
+  left: 300px;
+}
+
+.projects a {
+    width: 152px;
     height: 51px;
-    background-color: var(--header-red);
+    color: var(--white);
+    background: var(--header-red);
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
     text-align: center;
+    opacity: 0.9;
+  }
+
+  .tic-tac-toe {
+    background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0, 0, 0, 0.5), rgba(255,255,255,0)), 
+    url('') center / 100% no-repeat;
   }
 
   .shop-main-project {
@@ -326,13 +342,40 @@ transform: rotate(90deg);
     line-height: 27px;
     color: var(--white);
   }
+
+  .description h1 {
+    width: 474px;
+    height: 110px;
+    font-size: 110px;
+    line-height: 100%;
+  }
+  
+  .description p {
+    width: 564px;
+    height: 108px;
+    font-family: Poppins;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  
+  .get-my-resume a, 
+  .get-my-resume a:visited {
+    width: 143px;
+    height: 27px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--header-red);
+  }
   
   /* mobile */
 
 /* header mobile */
 @media (max-width: 767px) {
     .about-me *,
-    section.portfolio * {
+    section.portfolio *,
+    .knowledge {
         left: 16px;
     }
 
@@ -344,6 +387,10 @@ transform: rotate(90deg);
     .my-knowledge {
       margin-top: 70px;
       grid-template-columns: 1fr;
+    }
+
+    .about-me {
+      grid-auto-rows: 1400px;
     }
 
     .hamburger-icon {
@@ -395,8 +442,16 @@ transform: rotate(90deg);
         font-size: 12px;
     }
 
-    header h1 {
+    header h1,
+    .description h1 {
         font-size: 50px;
+    }
+
+    .description p {
+      width: 271px;
+      height: 335px;
+      font-size: 18px;
+      line-height: 27px;
     }
 
     .hello {
