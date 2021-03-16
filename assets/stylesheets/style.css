@@ -1,5 +1,7 @@
 body {
-    background: #1B1B1E;
+    background: #1b1b1e;
+    width: 1440px;
+    max-width: 1440px;
   }
 
   main {
@@ -19,13 +21,13 @@ font-family: 'Roboto', sans-serif;
 }
 
 :root {
-    --header-red: #DB4747;
-    --white: #FFFFFF;
+  --header-red: #db4747;
+  --white: #fff;
 }
   
 /* header */
 
-.about-me * {
+.about * {
 left: 547px;
 }
 
@@ -53,7 +55,8 @@ top: 302px;
 line-height: 24px;
 }
 
-header span {
+header span,
+contact span {
 font-size: 16px;
 }
 
@@ -75,7 +78,7 @@ top: 737px;
 font-weight: 500;
 font-size: 18px;
 line-height: 21px;
-color: var(--header-red)
+color: var(--header-red);
 }
 
 .red-ball {
@@ -89,7 +92,7 @@ mix-blend-mode: lighten;
 
 .see-separator {
 width: 70px;
-height: 0px;
+height: 0;
 left: 680px;
 top: 747px;
 border: 1px solid var(--white);
@@ -125,7 +128,7 @@ top: 909px;
 line-height: 80%;
 }
 
-.about-me ul {
+.about ul {
 top: 720px;
 left: 760px;
 font-size: 30px;
@@ -154,10 +157,28 @@ top: 42px;
 display: none;
 z-index: 100;
 font-weight: 400;
-width: 67px;
-height: 256px;
+width: 250px;
+height: 356px;
 font-size: 16px;
 line-height: 400%;
+}
+
+.hidden-menu ul {
+  border-left: thin solid gray;
+}
+
+.hidden-menu li {
+  padding-right: 30px;
+}
+
+.hidden-menu .numbers {
+  width: 15px;
+  height: 264px;
+  top: -10px;
+  left: -20px;
+  font-size: 12px;
+  line-height: 550%;
+  font-weight: 400;
 }
 
 .menu-md {
@@ -250,6 +271,11 @@ div.languages {
     opacity: 0.9;
   }
 
+  .ruby-game iframe {
+    width: 100%;
+    height: 100%;
+  }
+
   .tic-tac-toe {
     background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0, 0, 0, 0.5), rgba(255,255,255,0)), 
     url('') center / 100% no-repeat;
@@ -281,6 +307,12 @@ div.languages {
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .hidden-menu,
+  .knowledge {
+  background: #222123;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.25);
+}
   
   .knowledge {
     height: 245px;
@@ -330,7 +362,7 @@ div.languages {
     font-weight: normal;
     font-size: 14px;
     letter-spacing: -0.0525em;
-    color: #7D7C84;
+    color: #7d7c84;
   }
   
   .about-me h1 {
@@ -368,14 +400,23 @@ div.languages {
     line-height: 27px;
     color: var(--header-red);
   }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px;
+  }
+  
+  .contact .icon {
+    font-size: 36px;
+  }
   
   /* mobile */
 
 /* header mobile */
-@media (max-width: 767px) {
-    .about-me *,
-    section.portfolio *,
-    .knowledge {
+@media (max-width: 1023px) {
+  .about *,
+  section.portfolio * {
         left: 16px;
     }
 
@@ -390,7 +431,7 @@ div.languages {
     }
 
     .about-me {
-      grid-auto-rows: 1400px;
+      grid-template-rows: 1440px 600px;
     }
 
     .hamburger-icon {
@@ -401,10 +442,9 @@ div.languages {
         font-size: 36px;
     }
 
-    .hamburger-icon:hover +
-    .hidden-menu,
-    .hidden-menu:hover {
-        display: block;
+    .hidden-menu:hover,
+    .hamburger-icon:hover + .hidden-menu {
+    display: flex;
     }
 
     .number1 {
@@ -417,7 +457,12 @@ div.languages {
 
     .my-works {
         top: 620px;
-        width: fit-content;
+        width: 300px;
+      }
+    
+      header h1,
+      .description h1 {
+        font-size: 50px;
     }
 
     .portfolio h1 {
@@ -440,11 +485,6 @@ div.languages {
     header span, 
     header div {
         font-size: 12px;
-    }
-
-    header h1,
-    .description h1 {
-        font-size: 50px;
     }
 
     .description p {
@@ -481,12 +521,39 @@ div.languages {
         top: 470px;
     }
 
-    .about-me ul {
+    .about ul {
         top: 490px;
         left: 16px;
     }
 
     .main-project h1 {
       margin-top: 100px;
+    }
+
+    .hidden-menu .red-ball {
+      width: 20px;
+      height: 20px;
+      top: 300px;
+      left: 20px;
+    }
+
+    .contact ul {
+      width: 100%;
+      justify-content: start;
+    }
+  }
+  
+  /* tablet */
+  
+  @media (min-width: 767px) and (max-width: 1023px)
+  {
+    .about-me, 
+    .my-knowledge {
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 70px;
+    }  
+  
+    .contact ul {
+      width: 50%;
     }
 }

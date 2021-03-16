@@ -14,26 +14,34 @@
 </head>
 <body>
     <header class = 'd-flex'>
-        <navbar>
-            <a target = 'blank'
-                class='fa fa-bars d-flex d-md-none 
-                position-absolute hamburger-icon text-white text-decoration-none'>
-            </a>
-            <div class = 'hidden-menu position-absolute poppins'>
-                <ul class="list-unstyled d-flex-flex-column-pt-3">
-                  <li>
-                    <a class = 'text-white text-decoration-none font-weight-bold' href="#hello">Hello</a>
-                  </li>
-                  <li>
-                    <a class = 'text-white text-decoration-none font-weight-bold' href="#portfolio">Portfolio</a>
-                  </li>
-                  <li>
-                    <a class = 'text-white text-decoration-none font-weight-bold' href="#services">Services</a>
-                  </li>
-                  <li>
-                    <a class = 'text-white text-decoration-none font-weight-bold' href="#contact">Contact</a>
-                  </li>
-                </ul>
+      <nav>
+        <i class='fa fa-bars d-flex d-md-none 
+            position-absolute hamburger-icon text-white text-decoration-none'>
+        </i>
+        <div class = 'hidden-menu position-absolute poppins justify-content-end'>
+        <ul class="list-unstyled d-flex flex-column position-relative my-5">
+          <li class = 'position-relative'>
+            <span class = 'numbers position-absolute poppins'>01</span>
+            <a class = 'text-white text-decoration-none font-weight-bold' 
+            href="#hello">Hello</a>
+          </li>
+          <li class = 'position-relative'>
+            <span class = 'numbers position-absolute poppins'>02</span>
+            <a class = 'text-white text-decoration-none font-weight-bold' 
+            href="#portfolio">Portfolio</a>
+          </li>
+          <li class = 'position-relative'>
+            <span class = 'numbers position-absolute poppins'>03</span>
+            <a class = 'text-white text-decoration-none font-weight-bold' 
+            href="#services">Services</a>
+          </li>
+          <li class = 'position-relative'>
+            <span class = 'numbers position-absolute poppins'>04</span>
+            <a class = 'text-white text-decoration-none font-weight-bold' 
+            href="#contact">Contact</a>
+          </li>
+        </ul>
+        <i class='red-ball position-absolute rounded-circle'></i>
             </div>
             <div class="menu-md position-absolute">
               <ul class="list-unstyled d-none d-md-flex">
@@ -43,8 +51,9 @@
                 <li><a href="#contact" class="m-3 text-white text-decoration-none font-weight-bold">Contact</a></li>
               </ul>
             </div>
-          </navbar>
-        <section class = 'about-me text-white d-flex'>
+          </nav>
+          
+        <section class = 'about text-white d-flex'>
           <span class = 'number1 numbers position-absolute poppins'>01</span>
           <span class = 'position-absolute poppins hello' id = 'hello'>Hello I'm</span>
           <a href="" name="hello"></a>
@@ -77,8 +86,15 @@
               class='fa fa-linkedin text-dark bg-white text-decoration-none m-1 m-md-3 p-1 rounded'>
             </a>
             </li>
+          <li>
+              <a target = 'blank' href = 'mailto:imi56444@gmail.com' 
+              class='fa fa-envelope text-dark bg-white text-decoration-none m-1 m-md-3 p-1 rounded'>
+           </a>
+            </li>
           </ul>
         </section>
+
+
         <section class = 'portfolio d-flex text-white'>
             <span class = 'number2 numbers position-absolute poppins'>02</span>
             <span class = 'position-absolute poppins my-works'>My recent works</span>
@@ -129,7 +145,7 @@
         <section class="projects mt-3 text-white">
           <div class = 'grid-full order-2'>
             <div class = 'ruby-game'>
-            <iframe height="100%" width="100%" 
+            <iframe
             src="https://replit.com/@ImranHussain3/Tic-Tac-Toe?lite=true" scrolling="no" frameborder="no" 
             allowtransparency="true" allowfullscreen="true" 
             sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals">
@@ -200,7 +216,7 @@
           </div>
         </section>
 
-        <section class="about-me p-5 poppins text-white">
+        <section class="about-me p-1 p-md-5 poppins text-white">
           <div class = 'my-knowledge' id = 'services'>
             <div class = 'knowledge d-flex flex-column p-3'>
                 <div class="box box-green rounded-circle p-3 d-flex 
@@ -274,6 +290,35 @@
               </a>
             </span>
           </div>
+        </section>
+
+        <section class="contact position-relative text-white poppins pt-2">
+          <div id = 'contact' class = 'd-flex align-items-baseline flex-column flex-md-row'>
+            <div>
+              <span class = 'number1 numbers pr-5'>04</span>  
+              <span>Interested in collaborating</span> 
+            </div>        
+            <ul class='d-flex list-unstyled justify-content-evenly'>
+              <li>
+                <a target = 'blank' href = 'https://github.com/marcelomaidden' 
+                class='fa fa-github icon m-1 m-md-3 p-1 text-white text-decoration-none'></a>
+              </li>
+              <li>
+                <a target = 'blank' href = 'https://twitter.com/marcelomaidden' 
+                class='fa fa-twitter icon m-1 m-md-3 p-1 text-white text-decoration-none'></a>
+              </li>
+              <li>
+                <a target = 'blank' href = 'https://www.linkedin.com/in/marcelofernandesdearaujo/' 
+                class='fa fa-linkedin icon text-dark bg-white text-decoration-none m-1 m-md-3 p-1 rounded'>
+                 </a>
+              </li>
+              <li>
+                <a target = 'blank' href = 'mailto:marcelomaidden@gmail.com' 
+                class='fa fa-envelope icon text-dark bg-white text-decoration-none m-1 m-md-3 p-1 rounded'>
+                 </a>
+              </li>
+            </ul>
+          </div>      
         </section>
 
       </main>
