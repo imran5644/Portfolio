@@ -251,6 +251,11 @@ transform: rotate(90deg);
 div.languages,
 .author {
   height: 40px;
+}
+
+div.languages,
+.author,
+.project-description {
   background: rgba(0, 0, 0, 0.5);
 }
 
