@@ -1,11 +1,5 @@
 body {
-    background: #1b1b1e;
-    width: 1440px;
-    max-width: 1440px;
-  }
-
-  main {
-    overflow-x: hidden;
+  background: #1b1b1e;
 }
 
 .poppins {
@@ -377,7 +371,7 @@ div.languages {
 
   .description h1 {
     width: 474px;
-    height: 110px;
+    height: 210px;
     font-size: 110px;
     line-height: 100%;
   }
@@ -392,13 +386,13 @@ div.languages {
   
   .get-my-resume a, 
   .get-my-resume a:visited {
-    width: 143px;
+    width: 243px;
     height: 27px;
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
     color: var(--header-red);
+    z-index: 100;
   }
 
   .contact {
@@ -407,7 +401,7 @@ div.languages {
     grid-template-rows: 300px;
   }
   
-  .contact .icon {
+  .icon {
     font-size: 36px;
   }
   
@@ -428,6 +422,10 @@ div.languages {
     .my-knowledge {
       margin-top: 70px;
       grid-template-columns: 1fr;
+    }
+
+    .description h1 {
+      height: 110px;
     }
 
     .about-me {
@@ -541,13 +539,22 @@ div.languages {
       width: 100%;
       justify-content: start;
     }
+
+    .projects .live {
+      left: 10px;
+      bottom: 0;
+    }
+  
+    .projects .github {
+      left: 10px;
+      bottom: 100px;
+    }
   }
   
   /* tablet */
   
   @media (min-width: 767px) and (max-width: 1023px)
-  {
-    .about-me, 
+  { 
     .my-knowledge {
       grid-template-columns: repeat(2, 1fr);
       margin-top: 70px;
