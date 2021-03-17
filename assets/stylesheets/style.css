@@ -215,19 +215,19 @@ header span.red {
 .first-project {
   background:
     linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8)),
-    url('../images/') 10% / 110% no-repeat;
+    url('../images/first-project.png') center 80% / 70% 70% no-repeat;
 }
 
 .second-project {
   background:
     linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8)),
-    url('../images/') center / 100% no-repeat;
+    url('../images/second-project.png') center 5% / 120% no-repeat;
 }
 
 .main-project {
   background:
     linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)),
-    url('../images/') center / 140% no-repeat;
+    url('../images/main-project.png') center / 140% no-repeat;
 }
 
 .main-project h1 {
@@ -293,25 +293,25 @@ div.languages,
 .tic-tac-toe {
   background:
     linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)),
-    url('../images/') center / 100% no-repeat;
+    url('../images/tic-tac-toe.png') center / 100% no-repeat;
 }
 
 .shop-main-project {
   background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)),
-    url('../images/') 90% / 245% no-repeat;
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)),
+    url('../images/online-shop-full.png') center 15% / 245% no-repeat;
 }
 
 .shop-project {
   background:
     linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)),
-    url('../images/') center / 50% no-repeat;
+    url('../images/online-shop-mini.png') center / 130% 130% no-repeat;
 }
 
 .shop-project-mini {
   background:
     linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)),
-    url('../images/') center / 100% no-repeat;
+    url('../images/online-shop-mini-2.png') center 10% / 120% no-repeat;
 }
 
 .about-me {
@@ -443,13 +443,13 @@ footer {
   .shop-main-project {
     background:
       linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)),
-      url('../images/') 50% / 320% no-repeat;
+      url('../images/online-shop-full.png') 50% / 320% no-repeat;
   }
 
   .main-project {
     background:
       linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)),
-      url('../images/') center / 250% no-repeat;
+      url('../images/main-project.png') center / 250% no-repeat;
   }
 
   header h1,
@@ -653,33 +653,23 @@ footer {
 
   .first-project {
     margin: 0;
-    background:
-      linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 1),
-        rgba(255, 255, 255, 0),
-        rgba(0, 0, 0, 0.8)
-      ),
-      url(../images/) 10% / 100% no-repeat;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0), 
+    rgba(0, 0, 0, 0.8)), url(../images/first-project.png) 10% / 100% no-repeat;
   }
-
   .second-project {
     margin: 0;
     background:
-      linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 1),
-        rgba(255, 255, 255, 0),
-        rgba(0, 0, 0, 0.8)
-      ),
-      url('../images/') center / 100% no-repeat;
+      linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0), 
+      rgba(0, 0, 0, 0.8)),
+      url('../images/second-project.png') center / 130% 120% no-repeat;
+      
   }
-
+  
   .main-project {
     margin: 0;
     background:
       linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)),
-      url('../images/') center / 100% no-repeat;
+      url('../images/main-project.png') center / 100% no-repeat;
   }
 }
 
